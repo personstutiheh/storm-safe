@@ -1,0 +1,44 @@
+{
+  "scales": {
+    "G": 0,
+    "S": 0,
+    "R": 0
+  },
+  "kp": {
+    "value": 2.33,
+    "time": "2026-10-13T15:00:00"
+  },
+  "dst": {
+    "value": -13.0,
+    "time": "2026-10-13T18:00:00"
+  },
+  "solar_wind_speed": null,
+  "bz": null,
+  "xray": {
+    "flux": 6.852555998193566e-07,
+    "class": "B6.9",
+    "time": "2026-10-13T18:41:00Z"
+  },
+  "proton": {
+    "flux_ge10MeV": 0.24452728033065796,
+    "time": "2026-10-13T18:35:00Z"
+  },
+  "alerts": [
+    {
+      "issued": "2026-10-13 14:31:37.343",
+      "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5434\r\nIssue Time: 2026 Oct 13 1431 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\nExtension to Serial Number: 5433\nValid From: 2026 Oct 13 0115 UTC\nNow Valid Until: 2026 Oct 13 2100 UTC\nWarning Condition: Persistence\n\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impact"
+    },
+    {
+      "issued": "2026-10-13 01:15:49.670",
+      "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5433\r\nIssue Time: 2026 Oct 13 0115 UTC\r\n\r\nWARNING: Geomagnetic K-index of 4 expected \nValid From: 2026 Oct 13 0115 UTC\nValid To: 2026 Oct 13 1500 UTC\nWarning Conditions: Onset\nComment: \r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 d"
+    },
+    {
+      "issued": "2026-10-11 19:11:07.000",
+      "message": "Space Weather Message Code: WATA20\r\nSerial Number: 1129\r\nIssue Time: 2026 Oct 11 1911 UTC\r\n\r\nWATCH: Geomagnetic Storm Category G1 Predicted \nHighest Storm Level Predicted by Day:\nOct 12:  None (Below G1)   Oct 13:  G1 (Minor)   Oct 14:  None (Below G1)   \nTHIS SUPERSEDES ANY/ALL PRIOR WATCHES IN EFFECT\nComment: \r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scale"
+    }
+  ],
+  "errors": {
+    "solar_wind_speed": "'solar_wind_speed'",
+    "bz": "'bz'"
+  }
+}
