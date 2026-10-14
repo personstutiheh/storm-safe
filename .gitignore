@@ -1,14 +1,11 @@
-# Virtual environment
 .venv/
 venv/
 env/
 
-# Secrets - never commit API keys
 .env
 .env.*
 !.env.example
 
-# Python
 __pycache__/
 *.py[cod]
 *.egg-info/
@@ -16,22 +13,18 @@ __pycache__/
 .coverage
 htmlcov/
 
-# Editors / OS
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
 
-# Logs and local files
 *.log
 *.tmp
 
-# Node (for the dashboard later)
 node_modules/
 dist/
 build/
 
-# SPIN model checker output
 pan
 pan.*
 *.trail
