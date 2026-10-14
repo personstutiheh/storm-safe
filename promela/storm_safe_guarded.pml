@@ -39,7 +39,7 @@ inline apply(c) {
 /* Sets `bad` if the command just applied breaks a rule. */
 inline violates(c, pre_mode) {
   bad = false;
-  /*if :: (c == activate_payload && high_radiation) -> bad = true :: else -> skip fi;*/
+  if :: (c == activate_payload && high_radiation) -> bad = true :: else -> skip fi;
   if :: ((c == raise_orbit_small || c == raise_orbit_big) && pre_mode == safe) -> bad = true :: else -> skip fi;
   if :: ((c == raise_orbit_small || c == raise_orbit_big) && fuel < 20) -> bad = true :: else -> skip fi;
   if :: ((c == reorient_panels || c == antenna_low || c == antenna_normal || c == antenna_high) && severe_storm && pre_mode != safe) -> bad = true :: else -> skip fi;
