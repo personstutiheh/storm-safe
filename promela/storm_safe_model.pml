@@ -1,3 +1,7 @@
+/* Storm-Safe satellite model (UNGUARDED): the AI can propose any command.
+   Rules R1-R5 are checked after each command; SPIN should find a violation.
+   Mirrors storm_safe/guard.py -- keep the numbers in sync. */
+
 mtype = { normal, degraded, safe, emergency,           /* modes */
           enter_safe_mode, hibernate_payload, activate_payload,
           reorient_panels, antenna_low, antenna_normal, antenna_high,
@@ -21,22 +25,37 @@ inline apply(c) {
   :: c == antenna_low       -> power = power + 5
   :: c == antenna_normal    -> skip
   :: c == antenna_high      -> power = power - 10
-  :: c == raise_orbit_small -> fuel = fuel - 10; power = power - 5   /* 5 km  */
-  :: c == raise_orbit_big   -> fuel = fuel - 50; power = power - 5   /* 25 km */
+  :: c == raise_orbit_small -> fuel = fuel - 10; power = power - 5
+  :: c == raise_orbit_big   -> fuel = fuel - 50; power = power - 5
   :: c == no_action         -> skip
   fi;
-  /* clamp to 0..100 */
   if :: power > 100 -> power = 100 :: else -> skip fi;
   if :: power < 0   -> power = 0   :: else -> skip fi;
   if :: fuel > 100  -> fuel = 100  :: else -> skip fi;
   if :: fuel < 0    -> fuel = 0    :: else -> skip fi;
-  /* low power degrades a normal satellite */
-  if :: mode == normal && power < 40 -> mode = degraded :: else -> skip fi
+  if :: (mode == normal && power < 40) -> mode = degraded :: else -> skip fi
 }
 
-/* The AI operator: worst case, it may propose ANY command at ANY time. */
+inline check_rules(c, pre_mode) {
+  if :: (c == activate_payload && high_radiation) ->
+        printf("VIOLATION R1: payload activated during high radiation\n"); assert(false)
+     :: else -> skip fi;
+  if :: ((c == raise_orbit_small || c == raise_orbit_big) && pre_mode == safe) ->
+        printf("VIOLATION R2: orbit raise in safe mode\n"); assert(false)
+     :: else -> skip fi;
+  if :: ((c == raise_orbit_small || c == raise_orbit_big) && fuel < 20) ->
+        printf("VIOLATION R3: fuel below reserve\n"); assert(false)
+     :: else -> skip fi;
+  if :: ((c == reorient_panels || c == antenna_low || c == antenna_normal || c == antenna_high) && severe_storm && pre_mode != safe) ->
+        printf("VIOLATION R4: storm maneuver outside safe mode\n"); assert(false)
+     :: else -> skip fi;
+  if :: (power < 15) ->
+        printf("VIOLATION R5: power below floor\n"); assert(false)
+     :: else -> skip fi
+}
+
 active proctype commander() {
-  mtype c;
+  mtype c, pre_mode;
   do
   :: if
      :: c = enter_safe_mode
@@ -51,14 +70,14 @@ active proctype commander() {
      :: c = no_action
      fi;
      atomic {
+       pre_mode = mode;
        apply(c);
        printf("cmd=%e mode=%e payload=%d power=%d fuel=%d\n", c, mode, payload_on, power, fuel);
-       assert(power >= 0 && power <= 100 && fuel >= 0 && fuel <= 100)
+       check_rules(c, pre_mode)
      }
   od
 }
 
-/* Space weather can change at any moment. */
 active proctype environment() {
   do
   :: high_radiation = true
