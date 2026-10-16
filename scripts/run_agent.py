@@ -27,3 +27,6 @@ for risk in ("low", "medium", "high"):
     for r in verdict["results"]:
         why = "; ".join(v["rule"] for v in r["violations"])
         print(" ", "ACCEPTED" if r["accepted"] else "BLOCKED ", r["command"]["name"], why)
+    for a in verdict["guard_added"]:
+        print("  GUARD ADDED", a["command"]["name"], f'({a["rule"]}: {a["message"]})')
+    print("  final state:", verdict["final_state"])

@@ -64,6 +64,21 @@ def check_command(state, cond, cmd):
         v.append({"rule": "R5", "message": f"Power would fall below the floor of {POWER_FLOOR}."})
     return v
 
+def enforce_response(state, cond):
+    """R6: required response. Returns (commands the guard must add, resulting state)."""
+    added, current = [], dict(state)
+    if cond["severe_storm"] and current["mode"] != "safe":
+        cmd = {"name": "enter_safe_mode"}
+        added.append({"command": cmd, "rule": "R6",
+                      "message": "Severe storm: satellite must end in safe mode."})
+        current = apply(current, cmd)
+    if cond["high_radiation"] and current["payload_on"]:
+        cmd = {"name": "hibernate_payload"}
+        added.append({"command": cmd, "rule": "R6",
+                      "message": "High radiation: payload must be off."})
+        current = apply(current, cmd)
+    return added, current
+
 def check_sequence(state, cond, commands):
     """Check commands in order. Blocked commands are skipped; accepted ones
     change the state that later commands are checked against."""
@@ -74,9 +89,12 @@ def check_sequence(state, cond, commands):
         if not violations:
             approved.append(cmd)
             current = apply(current, cmd)
+    added, final = enforce_response(current, cond)
     return {
         "safe": all(r["accepted"] for r in results),
         "results": results,
         "approved": approved,
-        "final_state": current,
+        "guard_added": added,
+        "executed": approved + [a["command"] for a in added],
+        "final_state": final,
     }
