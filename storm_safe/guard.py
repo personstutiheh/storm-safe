@@ -98,3 +98,25 @@ def check_sequence(state, cond, commands):
         "executed": approved + [a["command"] for a in added],
         "final_state": final,
     }
+
+def end_state_problems(state, cond):
+    """R6 conditions that the final state fails."""
+    problems = []
+    if cond["severe_storm"] and state["mode"] != "safe":
+        problems.append("Severe storm but satellite is not in safe mode (R6).")
+    if cond["high_radiation"] and state["payload_on"]:
+        problems.append("High radiation but payload is still on (R6).")
+    return problems
+
+def run_unguarded(state, cond, commands):
+    """No guard: execute everything, record which rules would have been broken."""
+    results, current = [], dict(state)
+    for cmd in commands:
+        violations = check_command(current, cond, cmd)
+        current = apply(current, cmd)
+        results.append({"command": cmd, "executed": True, "violations": violations})
+    return {
+        "results": results,
+        "violation_count": sum(len(r["violations"]) for r in results),
+        "final_state": current,
+    }
