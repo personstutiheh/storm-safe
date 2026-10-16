@@ -9,3 +9,13 @@ STORM_SNAPSHOT = {
     "bz": {"nT": -12},
     "proton": {"flux_ge10MeV": 150},
 }
+
+CALM_SNAPSHOT = {
+    "simulated": True,
+    "scales": {"G": 0, "S": 0, "R": 0},
+    "kp": {"value": 2},
+    "dst": {"value": -10},
+    "solar_wind_speed": {"km_s": 400},
+    "bz": {"nT": 2},
+    "proton": {"flux_ge10MeV": 0.2},
+}

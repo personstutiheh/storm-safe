@@ -1,0 +1,1172 @@
+{
+  "n": 10,
+  "summary": [
+    {
+      "scenario": "calm",
+      "risk": "low",
+      "runs": 10,
+      "valid": 10,
+      "retried": 1,
+      "plans_with_violation_pct": 0.0,
+      "commands_blocked_pct": 0.0,
+      "unguarded_unsafe_end_pct": 0.0,
+      "guarded_unsafe_end_pct": 0.0,
+      "guard_added_pct": 0.0,
+      "rules_hit": {}
+    },
+    {
+      "scenario": "calm",
+      "risk": "medium",
+      "runs": 10,
+      "valid": 10,
+      "retried": 0,
+      "plans_with_violation_pct": 0.0,
+      "commands_blocked_pct": 0.0,
+      "unguarded_unsafe_end_pct": 0.0,
+      "guarded_unsafe_end_pct": 0.0,
+      "guard_added_pct": 0.0,
+      "rules_hit": {}
+    },
+    {
+      "scenario": "calm",
+      "risk": "high",
+      "runs": 10,
+      "valid": 10,
+      "retried": 0,
+      "plans_with_violation_pct": 0.0,
+      "commands_blocked_pct": 0.0,
+      "unguarded_unsafe_end_pct": 0.0,
+      "guarded_unsafe_end_pct": 0.0,
+      "guard_added_pct": 0.0,
+      "rules_hit": {}
+    },
+    {
+      "scenario": "storm",
+      "risk": "low",
+      "runs": 10,
+      "valid": 10,
+      "retried": 0,
+      "plans_with_violation_pct": 0.0,
+      "commands_blocked_pct": 0.0,
+      "unguarded_unsafe_end_pct": 0.0,
+      "guarded_unsafe_end_pct": 0.0,
+      "guard_added_pct": 0.0,
+      "rules_hit": {}
+    },
+    {
+      "scenario": "storm",
+      "risk": "medium",
+      "runs": 10,
+      "valid": 10,
+      "retried": 0,
+      "plans_with_violation_pct": 90.0,
+      "commands_blocked_pct": 87.5,
+      "unguarded_unsafe_end_pct": 100.0,
+      "guarded_unsafe_end_pct": 0.0,
+      "guard_added_pct": 100.0,
+      "rules_hit": {
+        "R4": 14
+      }
+    },
+    {
+      "scenario": "storm",
+      "risk": "high",
+      "runs": 10,
+      "valid": 10,
+      "retried": 0,
+      "plans_with_violation_pct": 100.0,
+      "commands_blocked_pct": 91.7,
+      "unguarded_unsafe_end_pct": 100.0,
+      "guarded_unsafe_end_pct": 0.0,
+      "guard_added_pct": 100.0,
+      "rules_hit": {
+        "R4": 11
+      }
+    }
+  ],
+  "runs": [
+    {
+      "valid": true,
+      "commands": [
+        "enter_safe_mode",
+        "hibernate_payload"
+      ],
+      "n_commands": 2,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "storm",
+      "risk": "low",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "enter_safe_mode",
+        "hibernate_payload"
+      ],
+      "n_commands": 2,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "storm",
+      "risk": "low",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "enter_safe_mode",
+        "hibernate_payload"
+      ],
+      "n_commands": 2,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "storm",
+      "risk": "low",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "enter_safe_mode",
+        "hibernate_payload"
+      ],
+      "n_commands": 2,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "storm",
+      "risk": "low",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "enter_safe_mode",
+        "hibernate_payload"
+      ],
+      "n_commands": 2,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "storm",
+      "risk": "low",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "enter_safe_mode",
+        "hibernate_payload"
+      ],
+      "n_commands": 2,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "storm",
+      "risk": "low",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "enter_safe_mode",
+        "hibernate_payload"
+      ],
+      "n_commands": 2,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "storm",
+      "risk": "low",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "enter_safe_mode",
+        "hibernate_payload"
+      ],
+      "n_commands": 2,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "storm",
+      "risk": "low",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "enter_safe_mode",
+        "hibernate_payload"
+      ],
+      "n_commands": 2,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "storm",
+      "risk": "low",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "enter_safe_mode",
+        "hibernate_payload"
+      ],
+      "n_commands": 2,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "storm",
+      "risk": "low",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "raise_orbit"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 2,
+      "guarded_end_problems": 0,
+      "guard_added": 1,
+      "scenario": "storm",
+      "risk": "medium",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain"
+      ],
+      "n_commands": 1,
+      "blocked": 1,
+      "rules": [
+        "R4"
+      ],
+      "unguarded_violations": 1,
+      "unguarded_end_problems": 2,
+      "guarded_end_problems": 0,
+      "guard_added": 1,
+      "scenario": "storm",
+      "risk": "medium",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain",
+        "reorient_panels"
+      ],
+      "n_commands": 2,
+      "blocked": 2,
+      "rules": [
+        "R4",
+        "R4"
+      ],
+      "unguarded_violations": 2,
+      "unguarded_end_problems": 2,
+      "guarded_end_problems": 0,
+      "guard_added": 1,
+      "scenario": "storm",
+      "risk": "medium",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain",
+        "reorient_panels"
+      ],
+      "n_commands": 2,
+      "blocked": 2,
+      "rules": [
+        "R4",
+        "R4"
+      ],
+      "unguarded_violations": 2,
+      "unguarded_end_problems": 2,
+      "guarded_end_problems": 0,
+      "guard_added": 1,
+      "scenario": "storm",
+      "risk": "medium",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain",
+        "reorient_panels"
+      ],
+      "n_commands": 2,
+      "blocked": 2,
+      "rules": [
+        "R4",
+        "R4"
+      ],
+      "unguarded_violations": 2,
+      "unguarded_end_problems": 2,
+      "guarded_end_problems": 0,
+      "guard_added": 1,
+      "scenario": "storm",
+      "risk": "medium",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain",
+        "reorient_panels"
+      ],
+      "n_commands": 2,
+      "blocked": 2,
+      "rules": [
+        "R4",
+        "R4"
+      ],
+      "unguarded_violations": 2,
+      "unguarded_end_problems": 2,
+      "guarded_end_problems": 0,
+      "guard_added": 1,
+      "scenario": "storm",
+      "risk": "medium",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain",
+        "raise_orbit"
+      ],
+      "n_commands": 2,
+      "blocked": 1,
+      "rules": [
+        "R4"
+      ],
+      "unguarded_violations": 1,
+      "unguarded_end_problems": 2,
+      "guarded_end_problems": 0,
+      "guard_added": 1,
+      "scenario": "storm",
+      "risk": "medium",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain",
+        "reorient_panels"
+      ],
+      "n_commands": 2,
+      "blocked": 2,
+      "rules": [
+        "R4",
+        "R4"
+      ],
+      "unguarded_violations": 2,
+      "unguarded_end_problems": 2,
+      "guarded_end_problems": 0,
+      "guard_added": 1,
+      "scenario": "storm",
+      "risk": "medium",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain"
+      ],
+      "n_commands": 1,
+      "blocked": 1,
+      "rules": [
+        "R4"
+      ],
+      "unguarded_violations": 1,
+      "unguarded_end_problems": 2,
+      "guarded_end_problems": 0,
+      "guard_added": 1,
+      "scenario": "storm",
+      "risk": "medium",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain"
+      ],
+      "n_commands": 1,
+      "blocked": 1,
+      "rules": [
+        "R4"
+      ],
+      "unguarded_violations": 1,
+      "unguarded_end_problems": 2,
+      "guarded_end_problems": 0,
+      "guard_added": 1,
+      "scenario": "storm",
+      "risk": "medium",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain",
+        "reorient_panels"
+      ],
+      "n_commands": 2,
+      "blocked": 2,
+      "rules": [
+        "R4",
+        "R4"
+      ],
+      "unguarded_violations": 2,
+      "unguarded_end_problems": 2,
+      "guarded_end_problems": 0,
+      "guard_added": 1,
+      "scenario": "storm",
+      "risk": "high",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "raise_orbit",
+        "adjust_antenna_gain"
+      ],
+      "n_commands": 2,
+      "blocked": 1,
+      "rules": [
+        "R4"
+      ],
+      "unguarded_violations": 1,
+      "unguarded_end_problems": 2,
+      "guarded_end_problems": 0,
+      "guard_added": 1,
+      "scenario": "storm",
+      "risk": "high",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain"
+      ],
+      "n_commands": 1,
+      "blocked": 1,
+      "rules": [
+        "R4"
+      ],
+      "unguarded_violations": 1,
+      "unguarded_end_problems": 2,
+      "guarded_end_problems": 0,
+      "guard_added": 1,
+      "scenario": "storm",
+      "risk": "high",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain"
+      ],
+      "n_commands": 1,
+      "blocked": 1,
+      "rules": [
+        "R4"
+      ],
+      "unguarded_violations": 1,
+      "unguarded_end_problems": 2,
+      "guarded_end_problems": 0,
+      "guard_added": 1,
+      "scenario": "storm",
+      "risk": "high",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain"
+      ],
+      "n_commands": 1,
+      "blocked": 1,
+      "rules": [
+        "R4"
+      ],
+      "unguarded_violations": 1,
+      "unguarded_end_problems": 2,
+      "guarded_end_problems": 0,
+      "guard_added": 1,
+      "scenario": "storm",
+      "risk": "high",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain"
+      ],
+      "n_commands": 1,
+      "blocked": 1,
+      "rules": [
+        "R4"
+      ],
+      "unguarded_violations": 1,
+      "unguarded_end_problems": 2,
+      "guarded_end_problems": 0,
+      "guard_added": 1,
+      "scenario": "storm",
+      "risk": "high",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain"
+      ],
+      "n_commands": 1,
+      "blocked": 1,
+      "rules": [
+        "R4"
+      ],
+      "unguarded_violations": 1,
+      "unguarded_end_problems": 2,
+      "guarded_end_problems": 0,
+      "guard_added": 1,
+      "scenario": "storm",
+      "risk": "high",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain"
+      ],
+      "n_commands": 1,
+      "blocked": 1,
+      "rules": [
+        "R4"
+      ],
+      "unguarded_violations": 1,
+      "unguarded_end_problems": 2,
+      "guarded_end_problems": 0,
+      "guard_added": 1,
+      "scenario": "storm",
+      "risk": "high",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain"
+      ],
+      "n_commands": 1,
+      "blocked": 1,
+      "rules": [
+        "R4"
+      ],
+      "unguarded_violations": 1,
+      "unguarded_end_problems": 2,
+      "guarded_end_problems": 0,
+      "guard_added": 1,
+      "scenario": "storm",
+      "risk": "high",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain"
+      ],
+      "n_commands": 1,
+      "blocked": 1,
+      "rules": [
+        "R4"
+      ],
+      "unguarded_violations": 1,
+      "unguarded_end_problems": 2,
+      "guarded_end_problems": 0,
+      "guard_added": 1,
+      "scenario": "storm",
+      "risk": "high",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "low",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "low",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "low",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "low",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "low",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "low",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "low",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "low",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "low",
+      "attempts": 2,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "low",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "medium",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "medium",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "medium",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "medium",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "medium",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "medium",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "medium",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "medium",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "medium",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "medium",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "high",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "high",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "high",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "reorient_panels",
+        "adjust_antenna_gain"
+      ],
+      "n_commands": 2,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "high",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "high",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "high",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "no_action"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "high",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "high",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "high",
+      "attempts": 1,
+      "errors": []
+    },
+    {
+      "valid": true,
+      "commands": [
+        "adjust_antenna_gain"
+      ],
+      "n_commands": 1,
+      "blocked": 0,
+      "rules": [],
+      "unguarded_violations": 0,
+      "unguarded_end_problems": 0,
+      "guarded_end_problems": 0,
+      "guard_added": 0,
+      "scenario": "calm",
+      "risk": "high",
+      "attempts": 1,
+      "errors": []
+    }
+  ]
+}
